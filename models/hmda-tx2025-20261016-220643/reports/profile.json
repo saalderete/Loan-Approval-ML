@@ -1,0 +1,1548 @@
+{
+  "rows": 483685,
+  "denied": 81303,
+  "denial_rate": 0.1680908028985807,
+  "action_taken": {
+    "Loan originated": 386871,
+    "Application denied": 81303,
+    "Application approved but not accepted": 15511
+  },
+  "numeric": {
+    "loan_amount": {
+      "p01": 5000.0,
+      "p99": 1255000.0,
+      "median": 275000.0,
+      "mean": 319144.80498671654,
+      "bins": [
+        {
+          "start": 5000.0,
+          "end": 46666.666666666664,
+          "count": 21610
+        },
+        {
+          "start": 46666.666666666664,
+          "end": 88333.33333333333,
+          "count": 29840
+        },
+        {
+          "start": 88333.33333333333,
+          "end": 130000.0,
+          "count": 26759
+        },
+        {
+          "start": 130000.0,
+          "end": 171666.66666666666,
+          "count": 31444
+        },
+        {
+          "start": 171666.66666666666,
+          "end": 213333.3333333333,
+          "count": 41285
+        },
+        {
+          "start": 213333.3333333333,
+          "end": 255000.0,
+          "count": 49990
+        },
+        {
+          "start": 255000.0,
+          "end": 296666.6666666666,
+          "count": 69639
+        },
+        {
+          "start": 296666.6666666666,
+          "end": 338333.3333333333,
+          "count": 46733
+        },
+        {
+          "start": 338333.3333333333,
+          "end": 380000.0,
+          "count": 35193
+        },
+        {
+          "start": 380000.0,
+          "end": 421666.6666666666,
+          "count": 26866
+        },
+        {
+          "start": 421666.6666666666,
+          "end": 463333.3333333333,
+          "count": 19938
+        },
+        {
+          "start": 463333.3333333333,
+          "end": 505000.0,
+          "count": 15612
+        },
+        {
+          "start": 505000.0,
+          "end": 546666.6666666666,
+          "count": 16280
+        },
+        {
+          "start": 546666.6666666666,
+          "end": 588333.3333333333,
+          "count": 9926
+        },
+        {
+          "start": 588333.3333333333,
+          "end": 630000.0,
+          "count": 7548
+        },
+        {
+          "start": 630000.0,
+          "end": 671666.6666666666,
+          "count": 5885
+        },
+        {
+          "start": 671666.6666666666,
+          "end": 713333.3333333333,
+          "count": 4897
+        },
+        {
+          "start": 713333.3333333333,
+          "end": 755000.0,
+          "count": 3740
+        },
+        {
+          "start": 755000.0,
+          "end": 796666.6666666666,
+          "count": 4296
+        },
+        {
+          "start": 796666.6666666666,
+          "end": 838333.3333333333,
+          "count": 4115
+        },
+        {
+          "start": 838333.3333333333,
+          "end": 880000.0,
+          "count": 942
+        },
+        {
+          "start": 880000.0,
+          "end": 921666.6666666666,
+          "count": 914
+        },
+        {
+          "start": 921666.6666666666,
+          "end": 963333.3333333333,
+          "count": 793
+        },
+        {
+          "start": 963333.3333333333,
+          "end": 1005000.0,
+          "count": 856
+        },
+        {
+          "start": 1005000.0,
+          "end": 1046666.6666666666,
+          "count": 1011
+        },
+        {
+          "start": 1046666.6666666666,
+          "end": 1088333.3333333333,
+          "count": 607
+        },
+        {
+          "start": 1088333.3333333333,
+          "end": 1130000.0,
+          "count": 656
+        },
+        {
+          "start": 1130000.0,
+          "end": 1171666.6666666665,
+          "count": 458
+        },
+        {
+          "start": 1171666.6666666665,
+          "end": 1213333.3333333333,
+          "count": 545
+        },
+        {
+          "start": 1213333.3333333333,
+          "end": 1255000.0,
+          "count": 5307
+        }
+      ],
+      "denial_by_decile": [
+        {
+          "range": "5,000 \u2013 85,000",
+          "n": 51450,
+          "denial_rate": 0.34775510204081633
+        },
+        {
+          "range": "85,000 \u2013 155,000",
+          "n": 49638,
+          "denial_rate": 0.262742253918369
+        },
+        {
+          "range": "155,000 \u2013 205,000",
+          "n": 49850,
+          "denial_rate": 0.18429287863590774
+        },
+        {
+          "range": "205,000 \u2013 245,000",
+          "n": 49990,
+          "denial_rate": 0.15021004200840168
+        },
+        {
+          "range": "245,000 \u2013 275,000",
+          "n": 42697,
+          "denial_rate": 0.1400566784551608
+        },
+        {
+          "range": "275,000 \u2013 315,000",
+          "n": 52316,
+          "denial_rate": 0.1314129520605551
+        },
+        {
+          "range": "315,000 \u2013 365,000",
+          "n": 49010,
+          "denial_rate": 0.12095490716180371
+        },
+        {
+          "range": "365,000 \u2013 435,000",
+          "n": 44818,
+          "denial_rate": 0.1087286358159668
+        },
+        {
+          "range": "435,000 \u2013 565,000",
+          "n": 46692,
+          "denial_rate": 0.10434335646363403
+        },
+        {
+          "range": "565,000 \u2013 2,995,000",
+          "n": 47224,
+          "denial_rate": 0.10894883957309842
+        }
+      ]
+    },
+    "property_value": {
+      "p01": 115000.0,
+      "p99": 1856599.999999744,
+      "median": 355000.0,
+      "mean": 451397.2420066779,
+      "bins": [
+        {
+          "start": 115000.0,
+          "end": 173053.3333333248,
+          "count": 21548
+        },
+        {
+          "start": 173053.3333333248,
+          "end": 231106.66666664957,
+          "count": 49324
+        },
+        {
+          "start": 231106.66666664957,
+          "end": 289159.9999999744,
+          "count": 82825
+        },
+        {
+          "start": 289159.9999999744,
+          "end": 347213.33333329915,
+          "count": 81541
+        },
+        {
+          "start": 347213.33333329915,
+          "end": 405266.66666662396,
+          "count": 60212
+        },
+        {
+          "start": 405266.66666662396,
+          "end": 463319.9999999488,
+          "count": 35548
+        },
+        {
+          "start": 463319.9999999488,
+          "end": 521373.33333327353,
+          "count": 31544
+        },
+        {
+          "start": 521373.33333327353,
+          "end": 579426.6666665983,
+          "count": 24974
+        },
+        {
+          "start": 579426.6666665983,
+          "end": 637479.9999999232,
+          "count": 19327
+        },
+        {
+          "start": 637479.9999999232,
+          "end": 695533.3333332479,
+          "count": 15104
+        },
+        {
+          "start": 695533.3333332479,
+          "end": 753586.6666665727,
+          "count": 9844
+        },
+        {
+          "start": 753586.6666665727,
+          "end": 811639.9999998976,
+          "count": 10035
+        },
+        {
+          "start": 811639.9999998976,
+          "end": 869693.3333332223,
+          "count": 7087
+        },
+        {
+          "start": 869693.3333332223,
+          "end": 927746.6666665471,
+          "count": 5439
+        },
+        {
+          "start": 927746.6666665471,
+          "end": 985799.999999872,
+          "count": 4449
+        },
+        {
+          "start": 985799.999999872,
+          "end": 1043853.3333331967,
+          "count": 2791
+        },
+        {
+          "start": 1043853.3333331967,
+          "end": 1101906.6666665215,
+          "count": 2352
+        },
+        {
+          "start": 1101906.6666665215,
+          "end": 1159959.9999998463,
+          "count": 2577
+        },
+        {
+          "start": 1159959.9999998463,
+          "end": 1218013.333333171,
+          "count": 2059
+        },
+        {
+          "start": 1218013.333333171,
+          "end": 1276066.6666664958,
+          "count": 1752
+        },
+        {
+          "start": 1276066.6666664958,
+          "end": 1334119.9999998207,
+          "count": 1327
+        },
+        {
+          "start": 1334119.9999998207,
+          "end": 1392173.3333331454,
+          "count": 1211
+        },
+        {
+          "start": 1392173.3333331454,
+          "end": 1450226.6666664702,
+          "count": 1085
+        },
+        {
+          "start": 1450226.6666664702,
+          "end": 1508279.999999795,
+          "count": 1211
+        },
+        {
+          "start": 1508279.999999795,
+          "end": 1566333.3333331198,
+          "count": 737
+        },
+        {
+          "start": 1566333.3333331198,
+          "end": 1624386.6666664446,
+          "count": 695
+        },
+        {
+          "start": 1624386.6666664446,
+          "end": 1682439.9999997695,
+          "count": 646
+        },
+        {
+          "start": 1682439.9999997695,
+          "end": 1740493.3333330941,
+          "count": 599
+        },
+        {
+          "start": 1740493.3333330941,
+          "end": 1798546.666666419,
+          "count": 449
+        },
+        {
+          "start": 1798546.666666419,
+          "end": 1856599.999999744,
+          "count": 5393
+        }
+      ],
+      "denial_by_decile": [
+        {
+          "range": "15,000 \u2013 205,000",
+          "n": 49590,
+          "denial_rate": 0.24456543657995564
+        },
+        {
+          "range": "205,000 \u2013 255,000",
+          "n": 60393,
+          "denial_rate": 0.19056844336264137
+        },
+        {
+          "range": "255,000 \u2013 285,000",
+          "n": 43714,
+          "denial_rate": 0.1709978496591481
+        },
+        {
+          "range": "285,000 \u2013 315,000",
+          "n": 43745,
+          "denial_rate": 0.1703737570008001
+        },
+        {
+          "range": "315,000 \u2013 355,000",
+          "n": 50297,
+          "denial_rate": 0.16519871960554308
+        },
+        {
+          "range": "355,000 \u2013 405,000",
+          "n": 47711,
+          "denial_rate": 0.15665150594202595
+        },
+        {
+          "range": "405,000 \u2013 475,000",
+          "n": 46982,
+          "denial_rate": 0.14230982078242732
+        },
+        {
+          "range": "475,000 \u2013 575,000",
+          "n": 45084,
+          "denial_rate": 0.14382042409724072
+        },
+        {
+          "range": "575,000 \u2013 765,000",
+          "n": 48185,
+          "denial_rate": 0.13813427415170695
+        },
+        {
+          "range": "765,000 \u2013 9,945,000",
+          "n": 47984,
+          "denial_rate": 0.1485703567855952
+        }
+      ]
+    },
+    "income": {
+      "p01": 27.0,
+      "p99": 784.1599999999744,
+      "median": 117.0,
+      "mean": 156.8338484757642,
+      "bins": [
+        {
+          "start": 27.0,
+          "end": 52.238666666665814,
+          "count": 37044
+        },
+        {
+          "start": 52.238666666665814,
+          "end": 77.47733333333163,
+          "count": 78939
+        },
+        {
+          "start": 77.47733333333163,
+          "end": 102.71599999999745,
+          "count": 84409
+        },
+        {
+          "start": 102.71599999999745,
+          "end": 127.95466666666326,
+          "count": 67988
+        },
+        {
+          "start": 127.95466666666326,
+          "end": 153.19333333332906,
+          "count": 55191
+        },
+        {
+          "start": 153.19333333332906,
+          "end": 178.4319999999949,
+          "count": 38763
+        },
+        {
+          "start": 178.4319999999949,
+          "end": 203.6706666666607,
+          "count": 28266
+        },
+        {
+          "start": 203.6706666666607,
+          "end": 228.90933333332652,
+          "count": 20320
+        },
+        {
+          "start": 228.90933333332652,
+          "end": 254.14799999999232,
+          "count": 15501
+        },
+        {
+          "start": 254.14799999999232,
+          "end": 279.38666666665813,
+          "count": 10845
+        },
+        {
+          "start": 279.38666666665813,
+          "end": 304.62533333332397,
+          "count": 8473
+        },
+        {
+          "start": 304.62533333332397,
+          "end": 329.8639999999898,
+          "count": 6045
+        },
+        {
+          "start": 329.8639999999898,
+          "end": 355.1026666666556,
+          "count": 5069
+        },
+        {
+          "start": 355.1026666666556,
+          "end": 380.3413333333214,
+          "count": 3800
+        },
+        {
+          "start": 380.3413333333214,
+          "end": 405.5799999999872,
+          "count": 3150
+        },
+        {
+          "start": 405.5799999999872,
+          "end": 430.81866666665303,
+          "count": 2506
+        },
+        {
+          "start": 430.81866666665303,
+          "end": 456.05733333331887,
+          "count": 2126
+        },
+        {
+          "start": 456.05733333331887,
+          "end": 481.29599999998464,
+          "count": 1704
+        },
+        {
+          "start": 481.29599999998464,
+          "end": 506.5346666666505,
+          "count": 1520
+        },
+        {
+          "start": 506.5346666666505,
+          "end": 531.7733333333163,
+          "count": 1149
+        },
+        {
+          "start": 531.7733333333163,
+          "end": 557.0119999999821,
+          "count": 1071
+        },
+        {
+          "start": 557.0119999999821,
+          "end": 582.2506666666479,
+          "count": 815
+        },
+        {
+          "start": 582.2506666666479,
+          "end": 607.4893333333138,
+          "count": 820
+        },
+        {
+          "start": 607.4893333333138,
+          "end": 632.7279999999796,
+          "count": 623
+        },
+        {
+          "start": 632.7279999999796,
+          "end": 657.9666666666453,
+          "count": 592
+        },
+        {
+          "start": 657.9666666666453,
+          "end": 683.2053333333112,
+          "count": 559
+        },
+        {
+          "start": 683.2053333333112,
+          "end": 708.443999999977,
+          "count": 436
+        },
+        {
+          "start": 708.443999999977,
+          "end": 733.6826666666428,
+          "count": 420
+        },
+        {
+          "start": 733.6826666666428,
+          "end": 758.9213333333087,
+          "count": 405
+        },
+        {
+          "start": 758.9213333333087,
+          "end": 784.1599999999744,
+          "count": 5136
+        }
+      ],
+      "denial_by_decile": [
+        {
+          "range": "1 \u2013 57",
+          "n": 49529,
+          "denial_rate": 0.3722869430030891
+        },
+        {
+          "range": "57 \u2013 72",
+          "n": 49064,
+          "denial_rate": 0.20846241643567584
+        },
+        {
+          "range": "72 \u2013 86",
+          "n": 49313,
+          "denial_rate": 0.17261168454565734
+        },
+        {
+          "range": "86 \u2013 100",
+          "n": 46686,
+          "denial_rate": 0.15542132545088463
+        },
+        {
+          "range": "100 \u2013 117",
+          "n": 47912,
+          "denial_rate": 0.14539155117715813
+        },
+        {
+          "range": "117 \u2013 137",
+          "n": 48676,
+          "denial_rate": 0.14290410058344974
+        },
+        {
+          "range": "137 \u2013 162",
+          "n": 47768,
+          "denial_rate": 0.13144783118405629
+        },
+        {
+          "range": "162 \u2013 200",
+          "n": 49017,
+          "denial_rate": 0.12326335761062489
+        },
+        {
+          "range": "200 \u2013 275",
+          "n": 47842,
+          "denial_rate": 0.1109067346682831
+        },
+        {
+          "range": "275 \u2013 5,000",
+          "n": 47878,
+          "denial_rate": 0.11109486611805004
+        }
+      ]
+    },
+    "combined_loan_to_value_ratio": {
+      "p01": 16.40084,
+      "p99": 101.75,
+      "median": 83.729,
+      "mean": 80.01772914816334,
+      "bins": [
+        {
+          "start": 16.40084,
+          "end": 19.245811999999997,
+          "count": 6691
+        },
+        {
+          "start": 19.245811999999997,
+          "end": 22.090784,
+          "count": 2294
+        },
+        {
+          "start": 22.090784,
+          "end": 24.935755999999998,
+          "count": 2356
+        },
+        {
+          "start": 24.935755999999998,
+          "end": 27.780727999999996,
+          "count": 2995
+        },
+        {
+          "start": 27.780727999999996,
+          "end": 30.6257,
+          "count": 3244
+        },
+        {
+          "start": 30.6257,
+          "end": 33.47067199999999,
+          "count": 3524
+        },
+        {
+          "start": 33.47067199999999,
+          "end": 36.315644,
+          "count": 3742
+        },
+        {
+          "start": 36.315644,
+          "end": 39.160616,
+          "count": 4275
+        },
+        {
+          "start": 39.160616,
+          "end": 42.005587999999996,
+          "count": 4802
+        },
+        {
+          "start": 42.005587999999996,
+          "end": 44.85056,
+          "count": 4703
+        },
+        {
+          "start": 44.85056,
+          "end": 47.695532,
+          "count": 5641
+        },
+        {
+          "start": 47.695532,
+          "end": 50.540504,
+          "count": 7409
+        },
+        {
+          "start": 50.540504,
+          "end": 53.385476,
+          "count": 6821
+        },
+        {
+          "start": 53.385476,
+          "end": 56.230447999999996,
+          "count": 7645
+        },
+        {
+          "start": 56.230447999999996,
+          "end": 59.075419999999994,
+          "count": 8231
+        },
+        {
+          "start": 59.075419999999994,
+          "end": 61.92039199999999,
+          "count": 10637
+        },
+        {
+          "start": 61.92039199999999,
+          "end": 64.76536399999999,
+          "count": 8837
+        },
+        {
+          "start": 64.76536399999999,
+          "end": 67.61033599999999,
+          "count": 10801
+        },
+        {
+          "start": 67.61033599999999,
+          "end": 70.455308,
+          "count": 17799
+        },
+        {
+          "start": 70.455308,
+          "end": 73.30028,
+          "count": 10093
+        },
+        {
+          "start": 73.30028,
+          "end": 76.145252,
+          "count": 23740
+        },
+        {
+          "start": 76.145252,
+          "end": 78.990224,
+          "count": 11920
+        },
+        {
+          "start": 78.990224,
+          "end": 81.835196,
+          "count": 70434
+        },
+        {
+          "start": 81.835196,
+          "end": 84.680168,
+          "count": 5189
+        },
+        {
+          "start": 84.680168,
+          "end": 87.52514,
+          "count": 11637
+        },
+        {
+          "start": 87.52514,
+          "end": 90.37011199999999,
+          "count": 28710
+        },
+        {
+          "start": 90.37011199999999,
+          "end": 93.215084,
+          "count": 6946
+        },
+        {
+          "start": 93.215084,
+          "end": 96.060056,
+          "count": 40185
+        },
+        {
+          "start": 96.060056,
+          "end": 98.905028,
+          "count": 88181
+        },
+        {
+          "start": 98.905028,
+          "end": 101.75,
+          "count": 64203
+        }
+      ],
+      "denial_by_decile": [
+        {
+          "range": "1 \u2013 50",
+          "n": 48370,
+          "denial_rate": 0.26142236923713047
+        },
+        {
+          "range": "50 \u2013 65",
+          "n": 48369,
+          "denial_rate": 0.21776344352787944
+        },
+        {
+          "range": "65 \u2013 75",
+          "n": 56242,
+          "denial_rate": 0.18991145407346824
+        },
+        {
+          "range": "75 \u2013 80",
+          "n": 83713,
+          "denial_rate": 0.15541194318684076
+        },
+        {
+          "range": "80 \u2013 84",
+          "n": 5150,
+          "denial_rate": 0.3157281553398058
+        },
+        {
+          "range": "84 \u2013 93",
+          "n": 48817,
+          "denial_rate": 0.15406518221111498
+        },
+        {
+          "range": "93 \u2013 96",
+          "n": 111400,
+          "denial_rate": 0.1285637342908438
+        },
+        {
+          "range": "96 \u2013 100",
+          "n": 64070,
+          "denial_rate": 0.11749648821601373
+        },
+        {
+          "range": "100 \u2013 250",
+          "n": 17554,
+          "denial_rate": 0.19579583001025408
+        }
+      ]
+    },
+    "loan_term": {
+      "p01": 60.0,
+      "p99": 360.0,
+      "median": 360.0,
+      "mean": 326.09725131025357,
+      "bins": [
+        {
+          "start": 60.0,
+          "end": 70.0,
+          "count": 6214
+        },
+        {
+          "start": 70.0,
+          "end": 80.0,
+          "count": 92
+        },
+        {
+          "start": 80.0,
+          "end": 90.0,
+          "count": 1099
+        },
+        {
+          "start": 90.0,
+          "end": 100.0,
+          "count": 144
+        },
+        {
+          "start": 100.0,
+          "end": 110.0,
+          "count": 15
+        },
+        {
+          "start": 110.0,
+          "end": 120.0,
+          "count": 8
+        },
+        {
+          "start": 120.0,
+          "end": 130.0,
+          "count": 12451
+        },
+        {
+          "start": 130.0,
+          "end": 140.0,
+          "count": 71
+        },
+        {
+          "start": 140.0,
+          "end": 150.0,
+          "count": 97
+        },
+        {
+          "start": 150.0,
+          "end": 160.0,
+          "count": 77
+        },
+        {
+          "start": 160.0,
+          "end": 170.0,
+          "count": 186
+        },
+        {
+          "start": 170.0,
+          "end": 180.0,
+          "count": 11
+        },
+        {
+          "start": 180.0,
+          "end": 190.0,
+          "count": 38315
+        },
+        {
+          "start": 190.0,
+          "end": 200.0,
+          "count": 208
+        },
+        {
+          "start": 200.0,
+          "end": 210.0,
+          "count": 40
+        },
+        {
+          "start": 210.0,
+          "end": 220.0,
+          "count": 27
+        },
+        {
+          "start": 220.0,
+          "end": 230.0,
+          "count": 31
+        },
+        {
+          "start": 230.0,
+          "end": 240.0,
+          "count": 15
+        },
+        {
+          "start": 240.0,
+          "end": 250.0,
+          "count": 31518
+        },
+        {
+          "start": 250.0,
+          "end": 260.0,
+          "count": 334
+        },
+        {
+          "start": 260.0,
+          "end": 270.0,
+          "count": 47
+        },
+        {
+          "start": 270.0,
+          "end": 280.0,
+          "count": 53
+        },
+        {
+          "start": 280.0,
+          "end": 290.0,
+          "count": 63
+        },
+        {
+          "start": 290.0,
+          "end": 300.0,
+          "count": 69
+        },
+        {
+          "start": 300.0,
+          "end": 310.0,
+          "count": 2999
+        },
+        {
+          "start": 310.0,
+          "end": 320.0,
+          "count": 371
+        },
+        {
+          "start": 320.0,
+          "end": 330.0,
+          "count": 905
+        },
+        {
+          "start": 330.0,
+          "end": 340.0,
+          "count": 385
+        },
+        {
+          "start": 340.0,
+          "end": 350.0,
+          "count": 393
+        },
+        {
+          "start": 350.0,
+          "end": 360.0,
+          "count": 387447
+        }
+      ],
+      "denial_by_decile": [
+        {
+          "range": "1 \u2013 180",
+          "n": 58573,
+          "denial_rate": 0.22853533197889814
+        },
+        {
+          "range": "180 \u2013 360",
+          "n": 422385,
+          "denial_rate": 0.1591628490595073
+        },
+        {
+          "range": "360 \u2013 480",
+          "n": 2727,
+          "denial_rate": 0.2526585991932527
+        }
+      ]
+    }
+  },
+  "categorical": {
+    "debt_to_income_ratio": [
+      {
+        "code": "<20%",
+        "label": "<20%",
+        "n": 19396,
+        "share": 0.04010047861728191,
+        "denial_rate": 0.1817900598061456
+      },
+      {
+        "code": "20%-<30%",
+        "label": "20%-<30%",
+        "n": 58157,
+        "share": 0.12023734455275645,
+        "denial_rate": 0.11310762247020995
+      },
+      {
+        "code": "30%-<36%",
+        "label": "30%-<36%",
+        "n": 66000,
+        "share": 0.13645244322234512,
+        "denial_rate": 0.10742424242424242
+      },
+      {
+        "code": "36",
+        "label": "36%",
+        "n": 13579,
+        "share": 0.028074056462367037,
+        "denial_rate": 0.10663524559982325
+      },
+      {
+        "code": "37",
+        "label": "37%",
+        "n": 14420,
+        "share": 0.029812791382821464,
+        "denial_rate": 0.1050624133148405
+      },
+      {
+        "code": "38",
+        "label": "38%",
+        "n": 15290,
+        "share": 0.03161148267984329,
+        "denial_rate": 0.10425114453891432
+      },
+      {
+        "code": "39",
+        "label": "39%",
+        "n": 16019,
+        "share": 0.03311866193907192,
+        "denial_rate": 0.10674823646919283
+      },
+      {
+        "code": "40",
+        "label": "40%",
+        "n": 17199,
+        "share": 0.03555826622698657,
+        "denial_rate": 0.10849467992325135
+      },
+      {
+        "code": "41",
+        "label": "41%",
+        "n": 17809,
+        "share": 0.03681941759616279,
+        "denial_rate": 0.10932674490426189
+      },
+      {
+        "code": "42",
+        "label": "42%",
+        "n": 19558,
+        "share": 0.04043540734155494,
+        "denial_rate": 0.11396870845689744
+      },
+      {
+        "code": "43",
+        "label": "43%",
+        "n": 19264,
+        "share": 0.039827573730837215,
+        "denial_rate": 0.1159156976744186
+      },
+      {
+        "code": "44",
+        "label": "44%",
+        "n": 22529,
+        "share": 0.046577834747821414,
+        "denial_rate": 0.11793688135292289
+      },
+      {
+        "code": "45",
+        "label": "45%",
+        "n": 17042,
+        "share": 0.03523367480901827,
+        "denial_rate": 0.11495129679615068
+      },
+      {
+        "code": "46",
+        "label": "46%",
+        "n": 16633,
+        "share": 0.034388083153291914,
+        "denial_rate": 0.11405038177117778
+      },
+      {
+        "code": "47",
+        "label": "47%",
+        "n": 16987,
+        "share": 0.035119964439666314,
+        "denial_rate": 0.11532348266321304
+      },
+      {
+        "code": "48",
+        "label": "48%",
+        "n": 18647,
+        "share": 0.038551950132834384,
+        "denial_rate": 0.11594358341824422
+      },
+      {
+        "code": "49",
+        "label": "49%",
+        "n": 26125,
+        "share": 0.054012425442178276,
+        "denial_rate": 0.10426794258373205
+      },
+      {
+        "code": "50%-60%",
+        "label": "50%-60%",
+        "n": 63759,
+        "share": 0.13181926253656823,
+        "denial_rate": 0.23755077714518735
+      },
+      {
+        "code": ">60%",
+        "label": ">60%",
+        "n": 25272,
+        "share": 0.052248880986592514,
+        "denial_rate": 0.8334520417853751
+      }
+    ],
+    "loan_type": [
+      {
+        "code": "1",
+        "label": "Conventional",
+        "n": 330190,
+        "share": 0.6826550337513051,
+        "denial_rate": 0.18568400012114236
+      },
+      {
+        "code": "2",
+        "label": "FHA",
+        "n": 108569,
+        "share": 0.2244622016394968,
+        "denial_rate": 0.1416886956681926
+      },
+      {
+        "code": "3",
+        "label": "VA",
+        "n": 41741,
+        "share": 0.08629790049308951,
+        "denial_rate": 0.10246520207949018
+      },
+      {
+        "code": "4",
+        "label": "USDA / RHS",
+        "n": 3185,
+        "share": 0.006584864116108625,
+        "denial_rate": 0.1042386185243328
+      }
+    ],
+    "loan_purpose": [
+      {
+        "code": "1",
+        "label": "Home purchase",
+        "n": 330349,
+        "share": 0.6829837600917953,
+        "denial_rate": 0.09843226406013035
+      },
+      {
+        "code": "2",
+        "label": "Home improvement",
+        "n": 16178,
+        "share": 0.03344738827956211,
+        "denial_rate": 0.42057114600074175
+      },
+      {
+        "code": "31",
+        "label": "Refinance",
+        "n": 47218,
+        "share": 0.09762138581928322,
+        "denial_rate": 0.2446524630437545
+      },
+      {
+        "code": "32",
+        "label": "Cash-out refinance",
+        "n": 65356,
+        "share": 0.1351209981702968,
+        "denial_rate": 0.3022981822632964
+      },
+      {
+        "code": "4",
+        "label": "Other purpose",
+        "n": 24584,
+        "share": 0.050826467639062616,
+        "denial_rate": 0.43414415880247315
+      }
+    ],
+    "lien_status": [
+      {
+        "code": "1",
+        "label": "First lien",
+        "n": 432788,
+        "share": 0.8947724242017016,
+        "denial_rate": 0.14717367394659742
+      },
+      {
+        "code": "2",
+        "label": "Subordinate lien",
+        "n": 50897,
+        "share": 0.10522757579829847,
+        "denial_rate": 0.34595359254965913
+      }
+    ],
+    "occupancy_type": [
+      {
+        "code": "1",
+        "label": "Principal residence",
+        "n": 465576,
+        "share": 0.9625603440255538,
+        "denial_rate": 0.16773416155471932
+      },
+      {
+        "code": "2",
+        "label": "Second residence",
+        "n": 5911,
+        "share": 0.012220763513443667,
+        "denial_rate": 0.1779732701742514
+      },
+      {
+        "code": "3",
+        "label": "Investment property",
+        "n": 12198,
+        "share": 0.025218892461002514,
+        "denial_rate": 0.17691424823741597
+      }
+    ],
+    "total_units": [
+      {
+        "code": "1",
+        "label": "1 unit",
+        "n": 480484,
+        "share": 0.9933820565037162,
+        "denial_rate": 0.1678765578042141
+      },
+      {
+        "code": "2",
+        "label": "2 units",
+        "n": 2432,
+        "share": 0.005028065786617323,
+        "denial_rate": 0.17557565789473684
+      },
+      {
+        "code": "3",
+        "label": "3 units",
+        "n": 216,
+        "share": 0.00044657163236403856,
+        "denial_rate": 0.3148148148148148
+      },
+      {
+        "code": "4",
+        "label": "4 units",
+        "n": 553,
+        "share": 0.0011433060773023765,
+        "denial_rate": 0.2640144665461121
+      }
+    ],
+    "preapproval": [
+      {
+        "code": "1",
+        "label": "Preapproval requested",
+        "n": 14647,
+        "share": 0.030282105089055895,
+        "denial_rate": 0.0
+      },
+      {
+        "code": "2",
+        "label": "Preapproval not requested",
+        "n": 469038,
+        "share": 0.9697178949109441,
+        "denial_rate": 0.17333989996546123
+      }
+    ],
+    "conforming_loan_limit": [
+      {
+        "code": "C",
+        "label": "Conforming",
+        "n": 470371,
+        "share": 0.9724738207717832,
+        "denial_rate": 0.1689985139389971
+      },
+      {
+        "code": "NC",
+        "label": "Nonconforming",
+        "n": 13314,
+        "share": 0.02752617922821671,
+        "denial_rate": 0.13602223223674328
+      }
+    ]
+  },
+  "denial_reasons": [
+    {
+      "code": "1",
+      "label": "Debt-to-income ratio",
+      "n": 29501,
+      "share": 0.36285253926669375
+    },
+    {
+      "code": "3",
+      "label": "Credit history",
+      "n": 14317,
+      "share": 0.17609436306163365
+    },
+    {
+      "code": "4",
+      "label": "Collateral",
+      "n": 12148,
+      "share": 0.1494163806993592
+    },
+    {
+      "code": "9",
+      "label": "Other",
+      "n": 9631,
+      "share": 0.11845811347674748
+    },
+    {
+      "code": "7",
+      "label": "Credit application incomplete",
+      "n": 7126,
+      "share": 0.08764744228380257
+    },
+    {
+      "code": "6",
+      "label": "Unverifiable information",
+      "n": 4407,
+      "share": 0.05420464189513302
+    },
+    {
+      "code": "5",
+      "label": "Insufficient cash",
+      "n": 2937,
+      "share": 0.03612412826094978
+    },
+    {
+      "code": "2",
+      "label": "Employment history",
+      "n": 1214,
+      "share": 0.014931798334624798
+    },
+    {
+      "code": "8",
+      "label": "Mortgage insurance denied",
+      "n": 22,
+      "share": 0.0002705927210558036
+    }
+  ],
+  "splits": [
+    {
+      "split": "train",
+      "rows": 290211,
+      "positives": 48782,
+      "prevalence": 0.1681
+    },
+    {
+      "split": "calibration",
+      "rows": 48368,
+      "positives": 8130,
+      "prevalence": 0.1681
+    },
+    {
+      "split": "selection",
+      "rows": 48369,
+      "positives": 8130,
+      "prevalence": 0.1681
+    },
+    {
+      "split": "test",
+      "rows": 96737,
+      "positives": 16261,
+      "prevalence": 0.1681
+    }
+  ],
+  "quality": {
+    "funnel": [
+      {
+        "stage": "raw",
+        "description": "All rows in the downloaded file",
+        "rows": 749111,
+        "denial_rate": 0.249
+      },
+      {
+        "stage": "decided",
+        "description": "Approved (originated or approved-not-accepted) or denied",
+        "rows": 749111,
+        "denial_rate": 0.249
+      },
+      {
+        "stage": "consumer_closed_end",
+        "description": "Closed-end, non-reverse mortgages for a consumer (not business) purpose",
+        "rows": 622545,
+        "denial_rate": 0.2331
+      },
+      {
+        "stage": "site_built_1_4",
+        "description": "Site-built, 1-4 unit homes with a known loan purpose",
+        "rows": 551627,
+        "denial_rate": 0.1843
+      },
+      {
+        "stage": "complete",
+        "description": "All 13 model inputs reported (no NA / Exempt)",
+        "rows": 493391,
+        "denial_rate": 0.1692
+      },
+      {
+        "stage": "in_domain",
+        "description": "Values inside the documented model domain",
+        "rows": 487042,
+        "denial_rate": 0.1672
+      },
+      {
+        "stage": "deduplicated",
+        "description": "Exact duplicate records removed",
+        "rows": 483685,
+        "denial_rate": 0.1681
+      }
+    ],
+    "missingness": [
+      {
+        "feature": "loan_amount",
+        "missing_rate": 0.0,
+        "denial_rate_when_missing": null,
+        "denial_rate_when_present": 0.1843
+      },
+      {
+        "feature": "property_value",
+        "missing_rate": 0.0387,
+        "denial_rate_when_missing": 0.4568,
+        "denial_rate_when_present": 0.1733
+      },
+      {
+        "feature": "income",
+        "missing_rate": 0.0566,
+        "denial_rate_when_missing": 0.2084,
+        "denial_rate_when_present": 0.1829
+      },
+      {
+        "feature": "debt_to_income_ratio",
+        "missing_rate": 0.065,
+        "denial_rate_when_missing": 0.272,
+        "denial_rate_when_present": 0.1782
+      },
+      {
+        "feature": "combined_loan_to_value_ratio",
+        "missing_rate": 0.057,
+        "denial_rate_when_missing": 0.2958,
+        "denial_rate_when_present": 0.1776
+      },
+      {
+        "feature": "loan_term",
+        "missing_rate": 0.0065,
+        "denial_rate_when_missing": 0.8509,
+        "denial_rate_when_present": 0.18
+      },
+      {
+        "feature": "loan_type",
+        "missing_rate": 0.0,
+        "denial_rate_when_missing": null,
+        "denial_rate_when_present": 0.1843
+      },
+      {
+        "feature": "loan_purpose",
+        "missing_rate": 0.0,
+        "denial_rate_when_missing": null,
+        "denial_rate_when_present": 0.1843
+      },
+      {
+        "feature": "lien_status",
+        "missing_rate": 0.0,
+        "denial_rate_when_missing": null,
+        "denial_rate_when_present": 0.1843
+      },
+      {
+        "feature": "occupancy_type",
+        "missing_rate": 0.0,
+        "denial_rate_when_missing": null,
+        "denial_rate_when_present": 0.1843
+      },
+      {
+        "feature": "total_units",
+        "missing_rate": 0.0,
+        "denial_rate_when_missing": null,
+        "denial_rate_when_present": 0.1843
+      },
+      {
+        "feature": "preapproval",
+        "missing_rate": 0.0,
+        "denial_rate_when_missing": null,
+        "denial_rate_when_present": 0.1843
+      },
+      {
+        "feature": "conforming_loan_limit",
+        "missing_rate": 0.0,
+        "denial_rate_when_missing": null,
+        "denial_rate_when_present": 0.1843
+      }
+    ],
+    "out_of_domain": {
+      "loan_amount": 529,
+      "property_value": 32,
+      "income": 5736,
+      "combined_loan_to_value_ratio": 43,
+      "loan_term": 0,
+      "loan_amount_vs_property_value": 9,
+      "debt_to_income_ratio_unknown_code": 0
+    },
+    "duplicates_removed": 3357,
+    "warnings": [
+      "Missing values are strongly related to the outcome for: property_value, debt_to_income_ratio, combined_loan_to_value_ratio, loan_term. Lenders often leave fields blank when an application never reached that step, so missingness leaks the decision. The model is trained on complete applications only."
+    ]
+  }
+}

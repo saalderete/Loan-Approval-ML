@@ -1,0 +1,56 @@
+{
+  "univariate_auc": [
+    {
+      "feature": "loan_purpose",
+      "auc": 0.6884954341230581
+    },
+    {
+      "feature": "debt_to_income_ratio",
+      "auc": 0.6846267796533181
+    },
+    {
+      "feature": "loan_amount",
+      "auc": 0.6402088893400675
+    },
+    {
+      "feature": "income",
+      "auc": 0.6231908794522226
+    },
+    {
+      "feature": "combined_loan_to_value_ratio",
+      "auc": 0.5844355697340616
+    },
+    {
+      "feature": "lien_status",
+      "auc": 0.5714522655179582
+    },
+    {
+      "feature": "loan_term",
+      "auc": 0.5627655707333186
+    },
+    {
+      "feature": "property_value",
+      "auc": 0.5508329551348894
+    },
+    {
+      "feature": "loan_type",
+      "auc": 0.5472825696720398
+    },
+    {
+      "feature": "preapproval",
+      "auc": 0.5190114068441065
+    },
+    {
+      "feature": "conforming_loan_limit",
+      "auc": 0.5028262817855197
+    },
+    {
+      "feature": "total_units",
+      "auc": 0.5005009643028661
+    },
+    {
+      "feature": "occupancy_type",
+      "auc": 0.5004275912065018
+    }
+  ]
+}

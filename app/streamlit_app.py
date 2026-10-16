@@ -19,7 +19,7 @@ st.set_page_config(
     page_title="Loan Approval ML · Mortgage decision research lab",
     page_icon=str(APP_DIR / "assets" / "icon.svg"),
     layout="wide",
-    initial_sidebar_state="expanded",
+    initial_sidebar_state="auto",
 )
 ui.inject_css()
 st.logo(str(APP_DIR / "assets" / "logo.svg"), size="large", icon_image=str(APP_DIR / "assets" / "icon.svg"))

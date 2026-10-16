@@ -1,0 +1,436 @@
+{
+  "version": "hmda-tx2025-20261016-220643",
+  "created_at": "2026-10-16T22:06:43+00:00",
+  "status_history": [
+    "draft_experiment",
+    "training",
+    "evaluated"
+  ],
+  "selected_algorithm": "hist_gradient_boosting",
+  "algorithms": {
+    "logistic_regression": "Logistic Regression",
+    "random_forest": "Random Forest",
+    "hist_gradient_boosting": "Histogram Gradient Boosting"
+  },
+  "outcome_definition": "Estimated probability that a Texas mortgage application with these characteristics was denied by the lender, as recorded in 2025 HMDA data (action_taken = 3), out of applications that were either approved or denied.",
+  "positive_class": "denied",
+  "schema_version": "hmda-inputs-v1",
+  "input_schema": {
+    "schema_version": "hmda-inputs-v1",
+    "fields": [
+      {
+        "name": "loan_amount",
+        "label": "Loan amount",
+        "description": "Amount requested, in dollars. HMDA rounds it to the midpoint of a $10,000 band.",
+        "type": "numeric",
+        "min": 5000.0,
+        "max": 3000000.0
+      },
+      {
+        "name": "property_value",
+        "label": "Property value",
+        "description": "Value of the property relied on, in dollars (also rounded to a $10,000 band).",
+        "type": "numeric",
+        "min": 10000.0,
+        "max": 10000000.0
+      },
+      {
+        "name": "income",
+        "label": "Gross annual income",
+        "description": "Gross annual income relied on, in thousands of dollars.",
+        "type": "numeric",
+        "min": 1.0,
+        "max": 5000.0
+      },
+      {
+        "name": "debt_to_income_ratio",
+        "label": "Debt-to-income ratio",
+        "description": "Monthly debt payments divided by monthly income, as HMDA bands (exact values are published only between 36% and 49%).",
+        "type": "categorical",
+        "allowed": {
+          "<20%": "<20%",
+          "20%-<30%": "20%-<30%",
+          "30%-<36%": "30%-<36%",
+          "36": "36%",
+          "37": "37%",
+          "38": "38%",
+          "39": "39%",
+          "40": "40%",
+          "41": "41%",
+          "42": "42%",
+          "43": "43%",
+          "44": "44%",
+          "45": "45%",
+          "46": "46%",
+          "47": "47%",
+          "48": "48%",
+          "49": "49%",
+          "50%-60%": "50%-60%",
+          ">60%": ">60%"
+        }
+      },
+      {
+        "name": "combined_loan_to_value_ratio",
+        "label": "Combined loan-to-value",
+        "description": "All loans secured by the property divided by its value, in percent.",
+        "type": "numeric",
+        "min": 1.0,
+        "max": 250.0
+      },
+      {
+        "name": "loan_term",
+        "label": "Loan term",
+        "description": "Number of months until the loan would be repaid.",
+        "type": "numeric",
+        "min": 1.0,
+        "max": 480.0
+      },
+      {
+        "name": "loan_type",
+        "label": "Loan type",
+        "description": "Whether the loan is conventional or insured/guaranteed by FHA, VA or USDA.",
+        "type": "categorical",
+        "allowed": {
+          "1": "Conventional",
+          "2": "FHA",
+          "3": "VA",
+          "4": "USDA / RHS"
+        }
+      },
+      {
+        "name": "loan_purpose",
+        "label": "Loan purpose",
+        "description": "Purchase, refinance, cash-out refinance, home improvement or other.",
+        "type": "categorical",
+        "allowed": {
+          "1": "Home purchase",
+          "2": "Home improvement",
+          "31": "Refinance",
+          "32": "Cash-out refinance",
+          "4": "Other purpose"
+        }
+      },
+      {
+        "name": "lien_status",
+        "label": "Lien position",
+        "description": "Whether the loan would be the first or a subordinate lien on the property.",
+        "type": "categorical",
+        "allowed": {
+          "1": "First lien",
+          "2": "Subordinate lien"
+        }
+      },
+      {
+        "name": "occupancy_type",
+        "label": "Occupancy",
+        "description": "Principal residence, second home or investment property.",
+        "type": "categorical",
+        "allowed": {
+          "1": "Principal residence",
+          "2": "Second residence",
+          "3": "Investment property"
+        }
+      },
+      {
+        "name": "total_units",
+        "label": "Dwelling units",
+        "description": "Number of dwelling units in the property (1-4 for this model).",
+        "type": "categorical",
+        "allowed": {
+          "1": "1 unit",
+          "2": "2 units",
+          "3": "3 units",
+          "4": "4 units"
+        }
+      },
+      {
+        "name": "preapproval",
+        "label": "Preapproval",
+        "description": "Whether the applicant requested a preapproval.",
+        "type": "categorical",
+        "allowed": {
+          "1": "Preapproval requested",
+          "2": "Preapproval not requested"
+        }
+      },
+      {
+        "name": "conforming_loan_limit",
+        "label": "Conforming limit",
+        "description": "Whether the amount is within the GSE conforming loan limit for the county.",
+        "type": "categorical",
+        "allowed": {
+          "C": "Conforming",
+          "NC": "Nonconforming",
+          "NA": "Not applicable"
+        }
+      }
+    ]
+  },
+  "input_features": [
+    "loan_amount",
+    "property_value",
+    "income",
+    "debt_to_income_ratio",
+    "combined_loan_to_value_ratio",
+    "loan_term",
+    "loan_type",
+    "loan_purpose",
+    "lien_status",
+    "occupancy_type",
+    "total_units",
+    "preapproval",
+    "conforming_loan_limit"
+  ],
+  "excluded_columns": {
+    "post_decision": [
+      "action_taken",
+      "purchaser_type",
+      "interest_rate",
+      "rate_spread",
+      "hoepa_status",
+      "total_loan_costs",
+      "total_points_and_fees",
+      "origination_charges",
+      "discount_points",
+      "lender_credits",
+      "prepayment_penalty_term",
+      "intro_rate_period",
+      "denial_reason-1",
+      "denial_reason-2",
+      "denial_reason-3",
+      "denial_reason-4"
+    ],
+    "process_artifacts": [
+      "applicant_credit_score_type",
+      "co-applicant_credit_score_type",
+      "aus-1",
+      "aus-2",
+      "aus-3",
+      "aus-4",
+      "aus-5",
+      "submission_of_application",
+      "initially_payable_to_institution"
+    ],
+    "protected_audit_only": [
+      "derived_race",
+      "derived_ethnicity",
+      "derived_sex",
+      "applicant_age"
+    ],
+    "proxy_risk": [
+      "lei",
+      "census_tract",
+      "county_code",
+      "derived_msa-md",
+      "tract_population",
+      "tract_minority_population_percent",
+      "ffiec_msa_md_median_family_income",
+      "tract_to_msa_income_percentage",
+      "tract_owner_occupied_units",
+      "tract_one_to_four_family_homes",
+      "tract_median_age_of_housing_units"
+    ]
+  },
+  "dataset": {
+    "name": "HMDA 2025 TX: approved or denied, complete, site-built 1-4 unit",
+    "synthetic": false,
+    "source": "FFIEC HMDA Data Browser (hmda_2025_TX_actions_1_2_3.csv)",
+    "raw_sha256": "3abc1ec4e60ad714a191f3b0b2da91008926a428999a30ddbf2a8a56dc8858da",
+    "rows": 483685,
+    "prevalence": 0.1680908028985807,
+    "split_hash": "8d6a586640895e35c3595ad14655a30856bf757e5f4d34f3b1a05decc17727e2",
+    "split_seed": 20251
+  },
+  "training_config": {
+    "seed": 20251,
+    "target": "denied",
+    "primary_metric": "pr_auc",
+    "split": {
+      "test_size": 0.2,
+      "validation_size": 0.2
+    },
+    "tuning": {
+      "cv_folds": 3,
+      "max_rows": 120000
+    },
+    "calibration": "isotonic",
+    "bootstrap_resamples": 200,
+    "importance_rows": 20000,
+    "max_artifact_mb": 60,
+    "candidates": {
+      "logistic_regression": {
+        "grid": {
+          "C": [
+            0.03,
+            0.3,
+            3.0
+          ]
+        }
+      },
+      "random_forest": {
+        "fixed": {
+          "n_estimators": 120,
+          "min_samples_leaf": 100,
+          "max_features": "sqrt"
+        },
+        "grid": {
+          "max_depth": [
+            10,
+            14
+          ]
+        }
+      },
+      "hist_gradient_boosting": {
+        "fixed": {
+          "max_iter": 500,
+          "l2_regularization": 1.0
+        },
+        "grid": {
+          "learning_rate": [
+            0.05,
+            0.1
+          ],
+          "max_leaf_nodes": [
+            31,
+            63
+          ]
+        }
+      }
+    }
+  },
+  "calibration": {
+    "method": "isotonic",
+    "fitted_on": "calibration split"
+  },
+  "thresholds": {
+    "logistic_regression": {
+      "value": 0.2746441750131787,
+      "chosen_on": "selection split (max F1)",
+      "purpose": "research only"
+    },
+    "random_forest": {
+      "value": 0.3218884120171674,
+      "chosen_on": "selection split (max F1)",
+      "purpose": "research only"
+    },
+    "hist_gradient_boosting": {
+      "value": 0.3548387096774194,
+      "chosen_on": "selection split (max F1)",
+      "purpose": "research only"
+    }
+  },
+  "reference_values": {
+    "loan_amount": 275000.0,
+    "property_value": 355000.0,
+    "income": 117.0,
+    "debt_to_income_ratio": "30%-<36%",
+    "combined_loan_to_value_ratio": 83.98,
+    "loan_term": 360.0,
+    "loan_type": "1",
+    "loan_purpose": "1",
+    "lien_status": "1",
+    "occupancy_type": "1",
+    "total_units": "1",
+    "preapproval": "2",
+    "conforming_loan_limit": "C"
+  },
+  "explanation": {
+    "global": "permutation importance (PR-AUC drop) on held-out test rows",
+    "local": "Exact Shapley values over 8 input groups, against a typical Texas application from the training split (median amounts, most common categories). The contributions add up to the difference between this estimate and the typical application's estimate."
+  },
+  "headline_metrics": {
+    "roc_auc": 0.8566153125726234,
+    "pr_auc": 0.6849782549447404,
+    "brier": 0.08502062107341639,
+    "ece": 0.0027711961467906756,
+    "recall_at_threshold": 0.5290572535514421,
+    "precision_at_threshold": 0.7242192103712434,
+    "test_rows": 96737
+  },
+  "artifacts": {
+    "logistic_regression": {
+      "kind": "pipeline",
+      "path": "pipelines/logistic_regression.joblib",
+      "sha256": "9fd6a68f4bc11e2054916e1c47ab9c289c663ff17a415a73257156d9d5adaada",
+      "size_mb": 0.0
+    },
+    "random_forest": {
+      "kind": "pipeline",
+      "path": "pipelines/random_forest.joblib",
+      "sha256": "4df9fee617cb208aabb2264846536145e979a4f538862f66eb0d5cca97dea453",
+      "size_mb": 2.54
+    },
+    "hist_gradient_boosting": {
+      "kind": "pipeline",
+      "path": "pipelines/hist_gradient_boosting.joblib",
+      "sha256": "0b2a3515fc907675c7a4320ea4d84f56c8e6fc4190704427d23a7ca62855b5df",
+      "size_mb": 1.34
+    }
+  },
+  "promotion_gates": [
+    {
+      "name": "no_banned_inputs",
+      "passed": true,
+      "detail": "No post-decision, process-artifact, protected or proxy columns are model inputs"
+    },
+    {
+      "name": "univariate_leakage_screen",
+      "passed": true,
+      "detail": "Strongest single input AUC = 0.688 (must be < 0.95)"
+    },
+    {
+      "name": "beats_baseline",
+      "passed": true,
+      "detail": "Test PR-AUC 0.685 vs prevalence baseline 0.168"
+    },
+    {
+      "name": "calibration",
+      "passed": true,
+      "detail": "Test expected calibration error = 0.0028 (must be < 0.03)"
+    },
+    {
+      "name": "cv_stability",
+      "passed": true,
+      "detail": "CV PR-AUC std = 0.0032 (must be < 0.03)"
+    },
+    {
+      "name": "metrics_complete",
+      "passed": true,
+      "detail": "ROC-AUC, PR-AUC, Brier, ECE and log loss recorded on the test split"
+    },
+    {
+      "name": "fairness_report",
+      "passed": true,
+      "detail": "Group-level audit produced for every protected attribute"
+    },
+    {
+      "name": "smoke_predictions",
+      "passed": true,
+      "detail": "all demo scenarios scored"
+    },
+    {
+      "name": "artifact_size",
+      "passed": true,
+      "detail": "Selected artifact 1.34 MB (budget 60 MB)"
+    },
+    {
+      "name": "reference_values",
+      "passed": true,
+      "detail": "Reference values recorded for every input"
+    }
+  ],
+  "provenance": {
+    "git_commit": "a4f38e6",
+    "packages": {
+      "python": "3.12.3",
+      "numpy": "2.5.4",
+      "pandas": "3.0.6",
+      "scikit-learn": "1.9.1",
+      "joblib": "1.6.0",
+      "pyarrow": "26.0.0",
+      "pydantic": "2.14.1"
+    },
+    "platform": "Linux-6.18.44-fc-v139-x86_64-with-glibc2.39",
+    "training_seconds": 95.6
+  }
+}

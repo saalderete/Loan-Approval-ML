@@ -1,0 +1,425 @@
+{
+  "permutation": {
+    "logistic_regression": {
+      "method": "Permutation importance: drop in PR-AUC when one input is shuffled (5 repeats, 20,000 held-out applications)",
+      "features": [
+        {
+          "feature": "debt_to_income_ratio",
+          "label": "Debt-to-income ratio",
+          "importance": 0.3070081581484959,
+          "std": 0.001514441265059889
+        },
+        {
+          "feature": "loan_purpose",
+          "label": "Loan purpose",
+          "importance": 0.14483386725112118,
+          "std": 0.0018520621876180893
+        },
+        {
+          "feature": "property_value",
+          "label": "Property value",
+          "importance": 0.14190794612912092,
+          "std": 0.003147325854676637
+        },
+        {
+          "feature": "loan_amount",
+          "label": "Loan amount",
+          "importance": 0.08464530320273775,
+          "std": 0.0039720759060235256
+        },
+        {
+          "feature": "loan_type",
+          "label": "Loan type",
+          "importance": 0.024733313718261263,
+          "std": 0.0010536667402259278
+        },
+        {
+          "feature": "loan_term",
+          "label": "Loan term",
+          "importance": 0.01313969874605041,
+          "std": 0.0015562458056937413
+        },
+        {
+          "feature": "preapproval",
+          "label": "Preapproval",
+          "importance": 0.012971216613128566,
+          "std": 0.0013344102688375664
+        },
+        {
+          "feature": "lien_status",
+          "label": "Lien position",
+          "importance": 0.009286977354436843,
+          "std": 0.0008544112351196127
+        },
+        {
+          "feature": "income",
+          "label": "Gross annual income",
+          "importance": 0.003875815338827193,
+          "std": 0.000553282377270462
+        },
+        {
+          "feature": "conforming_loan_limit",
+          "label": "Conforming limit",
+          "importance": 0.0023186231984873907,
+          "std": 0.0005845198274069815
+        },
+        {
+          "feature": "occupancy_type",
+          "label": "Occupancy",
+          "importance": 0.0010760761354840832,
+          "std": 0.00019002797336224533
+        },
+        {
+          "feature": "combined_loan_to_value_ratio",
+          "label": "Combined loan-to-value",
+          "importance": 4.147867487820367e-05,
+          "std": 5.540726637662503e-05
+        },
+        {
+          "feature": "total_units",
+          "label": "Dwelling units",
+          "importance": -0.00014717186217707567,
+          "std": 0.00016532464158494905
+        }
+      ]
+    },
+    "random_forest": {
+      "method": "Permutation importance: drop in PR-AUC when one input is shuffled (5 repeats, 20,000 held-out applications)",
+      "features": [
+        {
+          "feature": "debt_to_income_ratio",
+          "label": "Debt-to-income ratio",
+          "importance": 0.3798052194417998,
+          "std": 0.0032591633556707357
+        },
+        {
+          "feature": "loan_purpose",
+          "label": "Loan purpose",
+          "importance": 0.1644463776452775,
+          "std": 0.0032274255433619383
+        },
+        {
+          "feature": "property_value",
+          "label": "Property value",
+          "importance": 0.08909429709266885,
+          "std": 0.0020612389396381225
+        },
+        {
+          "feature": "loan_type",
+          "label": "Loan type",
+          "importance": 0.06434333542951629,
+          "std": 0.0012185377874182977
+        },
+        {
+          "feature": "loan_amount",
+          "label": "Loan amount",
+          "importance": 0.05678653232117705,
+          "std": 0.0010087538726734051
+        },
+        {
+          "feature": "combined_loan_to_value_ratio",
+          "label": "Combined loan-to-value",
+          "importance": 0.048726411091749,
+          "std": 0.002330250993905278
+        },
+        {
+          "feature": "income",
+          "label": "Gross annual income",
+          "importance": 0.019284863786520966,
+          "std": 0.0006042068182345913
+        },
+        {
+          "feature": "lien_status",
+          "label": "Lien position",
+          "importance": 0.01205271236207528,
+          "std": 0.0004673001693067755
+        },
+        {
+          "feature": "loan_term",
+          "label": "Loan term",
+          "importance": 0.007889418248837533,
+          "std": 0.0007972582473670287
+        },
+        {
+          "feature": "preapproval",
+          "label": "Preapproval",
+          "importance": 0.0018374999348564902,
+          "std": 0.00016088250571503988
+        },
+        {
+          "feature": "occupancy_type",
+          "label": "Occupancy",
+          "importance": 0.00026449759419184816,
+          "std": 0.00010968610722402249
+        },
+        {
+          "feature": "conforming_loan_limit",
+          "label": "Conforming limit",
+          "importance": 0.0001870355057981943,
+          "std": 3.5907422924033665e-05
+        },
+        {
+          "feature": "total_units",
+          "label": "Dwelling units",
+          "importance": 2.727747698278993e-05,
+          "std": 2.187083584690985e-05
+        }
+      ]
+    },
+    "hist_gradient_boosting": {
+      "method": "Permutation importance: drop in PR-AUC when one input is shuffled (5 repeats, 20,000 held-out applications)",
+      "features": [
+        {
+          "feature": "debt_to_income_ratio",
+          "label": "Debt-to-income ratio",
+          "importance": 0.37833037087351234,
+          "std": 0.003565947391950892
+        },
+        {
+          "feature": "loan_purpose",
+          "label": "Loan purpose",
+          "importance": 0.2390924130915244,
+          "std": 0.0050779981118001406
+        },
+        {
+          "feature": "loan_amount",
+          "label": "Loan amount",
+          "importance": 0.23150182736512054,
+          "std": 0.0026816701075371282
+        },
+        {
+          "feature": "property_value",
+          "label": "Property value",
+          "importance": 0.21055756664148592,
+          "std": 0.0036178155092992824
+        },
+        {
+          "feature": "combined_loan_to_value_ratio",
+          "label": "Combined loan-to-value",
+          "importance": 0.1776016475920784,
+          "std": 0.004049823588190674
+        },
+        {
+          "feature": "loan_type",
+          "label": "Loan type",
+          "importance": 0.15030599904654346,
+          "std": 0.0020135387612457774
+        },
+        {
+          "feature": "income",
+          "label": "Gross annual income",
+          "importance": 0.038629790604333955,
+          "std": 0.0010951498289546381
+        },
+        {
+          "feature": "loan_term",
+          "label": "Loan term",
+          "importance": 0.021570926297965955,
+          "std": 0.0015494942621924433
+        },
+        {
+          "feature": "lien_status",
+          "label": "Lien position",
+          "importance": 0.016336822668192273,
+          "std": 0.000700234977811419
+        },
+        {
+          "feature": "preapproval",
+          "label": "Preapproval",
+          "importance": 0.01562132457102825,
+          "std": 0.0012462491981983467
+        },
+        {
+          "feature": "occupancy_type",
+          "label": "Occupancy",
+          "importance": 0.0066665728006230825,
+          "std": 0.0006764196194772967
+        },
+        {
+          "feature": "total_units",
+          "label": "Dwelling units",
+          "importance": 5.686963058300076e-05,
+          "std": 0.00020989591027752508
+        },
+        {
+          "feature": "conforming_loan_limit",
+          "label": "Conforming limit",
+          "importance": 5.40377978786033e-06,
+          "std": 6.269045211473192e-05
+        }
+      ]
+    }
+  },
+  "logistic_coefficients": [
+    {
+      "term": "dti_band_>60%",
+      "coefficient": 2.791896489456185,
+      "odds_ratio": 16.3119258814423
+    },
+    {
+      "term": "preapproval_1",
+      "coefficient": -2.692197680592296,
+      "odds_ratio": 0.06773192255437782
+    },
+    {
+      "term": "preapproval_2",
+      "coefficient": 2.0273484065285268,
+      "odds_ratio": 7.593923640579358
+    },
+    {
+      "term": "loan_purpose_1",
+      "coefficient": -1.7277766818455862,
+      "odds_ratio": 0.1776790081131199
+    },
+    {
+      "term": "dti_band_36-42%",
+      "coefficient": -1.1555397129705274,
+      "odds_ratio": 0.3148875421425993
+    },
+    {
+      "term": "dti_band_20-35%",
+      "coefficient": -1.0559992409506054,
+      "odds_ratio": 0.34784467294827565
+    },
+    {
+      "term": "dti_band_43-49%",
+      "coefficient": -1.022851047115685,
+      "odds_ratio": 0.35956833115969705
+    },
+    {
+      "term": "loan_type_3",
+      "coefficient": -0.7417475241616698,
+      "odds_ratio": 0.47628087551655784
+    },
+    {
+      "term": "conforming_loan_limit_C",
+      "coefficient": -0.7267555275821576,
+      "odds_ratio": 0.4834750696937082
+    },
+    {
+      "term": "lien_status_1",
+      "coefficient": -0.6133371860789156,
+      "odds_ratio": 0.5415406283533502
+    },
+    {
+      "term": "loan_purpose_4",
+      "coefficient": 0.5791830112433972,
+      "odds_ratio": 1.7845798533350943
+    },
+    {
+      "term": "loan_purpose_2",
+      "coefficient": 0.5015034000811299,
+      "odds_ratio": 1.6512018225559757
+    },
+    {
+      "term": "occupancy_type_3",
+      "coefficient": -0.44723137409521346,
+      "odds_ratio": 0.6393959514990172
+    },
+    {
+      "term": "ltv_this_loan",
+      "coefficient": 0.4468578863601372,
+      "odds_ratio": 1.5633921041558583
+    },
+    {
+      "term": "dti_band_<20%",
+      "coefficient": -0.399879716772986,
+      "odds_ratio": 0.6704006791432165
+    },
+    {
+      "term": "log_loan_amount",
+      "coefficient": -0.3777299920645148,
+      "odds_ratio": 0.6854155433190547
+    },
+    {
+      "term": "occupancy_type_1",
+      "coefficient": -0.3099886138725611,
+      "odds_ratio": 0.7334553073923461
+    },
+    {
+      "term": "loan_term",
+      "coefficient": 0.21167727556974092,
+      "odds_ratio": 1.2357490143227061
+    },
+    {
+      "term": "loan_type_1",
+      "coefficient": 0.2015894625417748,
+      "odds_ratio": 1.2233456757810284
+    },
+    {
+      "term": "dti_band_50-60%",
+      "coefficient": 0.17752395428968912,
+      "odds_ratio": 1.1942566651299449
+    },
+    {
+      "term": "loan_type_2",
+      "coefficient": -0.12124975286634787,
+      "odds_ratio": 0.8858126977033314
+    },
+    {
+      "term": "occupancy_type_2",
+      "coefficient": 0.09237071390391034,
+      "odds_ratio": 1.096771335109481
+    },
+    {
+      "term": "log_income",
+      "coefficient": -0.07717815535827857,
+      "odds_ratio": 0.9257249160605897
+    },
+    {
+      "term": "loan_purpose_31",
+      "coefficient": -0.07429090909818528,
+      "odds_ratio": 0.9284015740883734
+    },
+    {
+      "term": "conforming_loan_limit_NC",
+      "coefficient": 0.061906253518322525,
+      "odds_ratio": 1.0638626066766967
+    },
+    {
+      "term": "loan_purpose_32",
+      "coefficient": 0.05653190555520341,
+      "odds_ratio": 1.0581603754559201
+    },
+    {
+      "term": "lien_status_2",
+      "coefficient": -0.05151208798493545,
+      "odds_ratio": 0.9497921688193792
+    },
+    {
+      "term": "dti_value",
+      "coefficient": 0.04495205904314475,
+      "odds_ratio": 1.0459777135342578
+    },
+    {
+      "term": "total_units_n",
+      "coefficient": 0.04412652267916898,
+      "odds_ratio": 1.045114577220054
+    },
+    {
+      "term": "log_property_value",
+      "coefficient": -0.023670112079892933,
+      "odds_ratio": 0.9766078277486273
+    },
+    {
+      "term": "loan_to_income",
+      "coefficient": 0.023643170779186286,
+      "odds_ratio": 1.0239248863768002
+    },
+    {
+      "term": "loan_type_4",
+      "coefficient": -0.0034414595777341813,
+      "odds_ratio": 0.996564455456882
+    },
+    {
+      "term": "cltv",
+      "coefficient": 0.0026092544174388206,
+      "odds_ratio": 1.0026126614844033
+    },
+    {
+      "term": "conforming_loan_limit_NA",
+      "coefficient": 0.0,
+      "odds_ratio": 1.0
+    }
+  ]
+}

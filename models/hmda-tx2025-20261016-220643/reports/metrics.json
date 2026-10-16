@@ -1,0 +1,396 @@
+{
+  "primary_metric": "pr_auc",
+  "selected_algorithm": "hist_gradient_boosting",
+  "selection_split": {
+    "logistic_regression": {
+      "pr_auc_uncalibrated": 0.60029857807735,
+      "roc_auc": 0.8200823404267741,
+      "pr_auc": 0.5894654405501245,
+      "brier": 0.09783851110438428,
+      "log_loss": 0.33080629848758786,
+      "ece": 0.006910132665142339,
+      "prevalence": 0.16808286299075853,
+      "n": 48369,
+      "positives": 8130
+    },
+    "random_forest": {
+      "pr_auc_uncalibrated": 0.6693708701071518,
+      "roc_auc": 0.848224431286287,
+      "pr_auc": 0.6586272723081574,
+      "brier": 0.08919880921253671,
+      "log_loss": 0.30557162387682296,
+      "ece": 0.005124350144685338,
+      "prevalence": 0.16808286299075853,
+      "n": 48369,
+      "positives": 8130
+    },
+    "hist_gradient_boosting": {
+      "pr_auc_uncalibrated": 0.69328205040229,
+      "roc_auc": 0.8576331266928563,
+      "pr_auc": 0.6846249821422178,
+      "brier": 0.08514550556223638,
+      "log_loss": 0.29310278496137965,
+      "ece": 0.004767402334436274,
+      "prevalence": 0.16808286299075853,
+      "n": 48369,
+      "positives": 8130
+    }
+  },
+  "cv": {
+    "logistic_regression": {
+      "rows": 120000,
+      "folds": 3,
+      "metric": "pr_auc",
+      "best_params": {
+        "C": 3.0
+      },
+      "fold_scores": [
+        0.5834034191657829,
+        0.5898539812588751,
+        0.5938467886564731
+      ],
+      "mean": 0.5890347296937103,
+      "std": 0.004302663626564258,
+      "grid": [
+        {
+          "params": {
+            "C": 0.03
+          },
+          "mean": 0.5882597515067943,
+          "std": 0.004051939955859346
+        },
+        {
+          "params": {
+            "C": 0.3
+          },
+          "mean": 0.5889732709813309,
+          "std": 0.004261636147219533
+        },
+        {
+          "params": {
+            "C": 3.0
+          },
+          "mean": 0.5890347296937103,
+          "std": 0.004302663626564258
+        }
+      ]
+    },
+    "random_forest": {
+      "rows": 120000,
+      "folds": 3,
+      "metric": "pr_auc",
+      "best_params": {
+        "max_depth": 14
+      },
+      "fold_scores": [
+        0.6417021208908071,
+        0.6436852330957209,
+        0.6497398685371969
+      ],
+      "mean": 0.6450424075079083,
+      "std": 0.003418848597172564,
+      "grid": [
+        {
+          "params": {
+            "max_depth": 10
+          },
+          "mean": 0.6409240615581847,
+          "std": 0.0034451076200347035
+        },
+        {
+          "params": {
+            "max_depth": 14
+          },
+          "mean": 0.6450424075079083,
+          "std": 0.003418848597172564
+        }
+      ]
+    },
+    "hist_gradient_boosting": {
+      "rows": 120000,
+      "folds": 3,
+      "metric": "pr_auc",
+      "best_params": {
+        "learning_rate": 0.05,
+        "max_leaf_nodes": 63
+      },
+      "fold_scores": [
+        0.6714313440508707,
+        0.6696765821890207,
+        0.677252565099503
+      ],
+      "mean": 0.6727868304464648,
+      "std": 0.0032379918459296835,
+      "grid": [
+        {
+          "params": {
+            "learning_rate": 0.05,
+            "max_leaf_nodes": 31
+          },
+          "mean": 0.6722667158739827,
+          "std": 0.003300114878667851
+        },
+        {
+          "params": {
+            "learning_rate": 0.05,
+            "max_leaf_nodes": 63
+          },
+          "mean": 0.6727868304464648,
+          "std": 0.0032379918459296835
+        },
+        {
+          "params": {
+            "learning_rate": 0.1,
+            "max_leaf_nodes": 31
+          },
+          "mean": 0.6727349602600236,
+          "std": 0.0038543135556779588
+        },
+        {
+          "params": {
+            "learning_rate": 0.1,
+            "max_leaf_nodes": 63
+          },
+          "mean": 0.6717852824825107,
+          "std": 0.003047873069158248
+        }
+      ]
+    }
+  },
+  "test": {
+    "logistic_regression": {
+      "name": "Logistic Regression",
+      "probability": {
+        "roc_auc": 0.8204335348517414,
+        "pr_auc": 0.5888651159331217,
+        "brier": 0.09805354972543816,
+        "log_loss": 0.33099434201169436,
+        "ece": 0.0036063142340437334,
+        "prevalence": 0.16809493782110257,
+        "n": 96737,
+        "positives": 16261
+      },
+      "uncalibrated": {
+        "brier": 0.09866916365614596,
+        "ece": 0.010457926106548759
+      },
+      "at_threshold": {
+        "threshold": 0.2746,
+        "precision": 0.5263005780346821,
+        "recall": 0.5599286636738208,
+        "f1": 0.5425940824170913,
+        "balanced_accuracy": 0.7290485308527661,
+        "false_positive_rate": 0.10183160196828868,
+        "flagged_rate": 0.1788353990717099,
+        "confusion_matrix": {
+          "tn": 72281,
+          "fp": 8195,
+          "fn": 7156,
+          "tp": 9105
+        }
+      },
+      "ci": {
+        "roc_auc": {
+          "low": 0.8162019606660269,
+          "high": 0.8236040813138849
+        },
+        "pr_auc": {
+          "low": 0.5819999269826724,
+          "high": 0.5963121289471587
+        },
+        "brier": {
+          "low": 0.09683318421817219,
+          "high": 0.09940877147745095
+        },
+        "recall": {
+          "low": 0.552018178295089,
+          "high": 0.5661625862472086
+        },
+        "precision": {
+          "low": 0.5190064332145266,
+          "high": 0.5333033355517484
+        },
+        "n_boot": 200,
+        "method": "percentile bootstrap, 95%"
+      },
+      "artifact_saved": true
+    },
+    "random_forest": {
+      "name": "Random Forest",
+      "probability": {
+        "roc_auc": 0.8477465367576664,
+        "pr_auc": 0.6586217128493862,
+        "brier": 0.08903008198591267,
+        "log_loss": 0.3063265572608202,
+        "ece": 0.00346722614726154,
+        "prevalence": 0.16809493782110257,
+        "n": 96737,
+        "positives": 16261
+      },
+      "uncalibrated": {
+        "brier": 0.08983319425955148,
+        "ece": 0.016478101482100875
+      },
+      "at_threshold": {
+        "threshold": 0.3219,
+        "precision": 0.6493891419070339,
+        "recall": 0.5524260500584219,
+        "f1": 0.5969960789526152,
+        "balanced_accuracy": 0.7460798176133354,
+        "false_positive_rate": 0.06026641483175108,
+        "flagged_rate": 0.14299595811323484,
+        "confusion_matrix": {
+          "tn": 75626,
+          "fp": 4850,
+          "fn": 7278,
+          "tp": 8983
+        }
+      },
+      "ci": {
+        "roc_auc": {
+          "low": 0.8441237194992804,
+          "high": 0.8509557795014249
+        },
+        "pr_auc": {
+          "low": 0.6527441180749989,
+          "high": 0.6656575145547691
+        },
+        "brier": {
+          "low": 0.08785814526921826,
+          "high": 0.09028736665262517
+        },
+        "recall": {
+          "low": 0.5451211708772338,
+          "high": 0.5591982201336128
+        },
+        "precision": {
+          "low": 0.6416820617715879,
+          "high": 0.6565839918814595
+        },
+        "n_boot": 200,
+        "method": "percentile bootstrap, 95%"
+      },
+      "artifact_saved": true
+    },
+    "hist_gradient_boosting": {
+      "name": "Histogram Gradient Boosting",
+      "probability": {
+        "roc_auc": 0.8566153125726234,
+        "pr_auc": 0.6849782549447404,
+        "brier": 0.08502062107341639,
+        "log_loss": 0.2939223068567202,
+        "ece": 0.0027711961467906756,
+        "prevalence": 0.16809493782110257,
+        "n": 96737,
+        "positives": 16261
+      },
+      "uncalibrated": {
+        "brier": 0.08496793234317296,
+        "ece": 0.0036548242737400286
+      },
+      "at_threshold": {
+        "threshold": 0.3548,
+        "precision": 0.7242192103712434,
+        "recall": 0.5290572535514421,
+        "f1": 0.6114427860696517,
+        "balanced_accuracy": 0.7441747324469771,
+        "false_positive_rate": 0.04070778865748795,
+        "flagged_rate": 0.12279686159380589,
+        "confusion_matrix": {
+          "tn": 77200,
+          "fp": 3276,
+          "fn": 7658,
+          "tp": 8603
+        }
+      },
+      "ci": {
+        "roc_auc": {
+          "low": 0.8531625182492927,
+          "high": 0.859915153282692
+        },
+        "pr_auc": {
+          "low": 0.6793920483712478,
+          "high": 0.6914054482154863
+        },
+        "brier": {
+          "low": 0.08386053915314688,
+          "high": 0.08624447445978162
+        },
+        "recall": {
+          "low": 0.5227617427699635,
+          "high": 0.535459317370493
+        },
+        "precision": {
+          "low": 0.7170765539191558,
+          "high": 0.7314813518492902
+        },
+        "n_boot": 200,
+        "method": "percentile bootstrap, 95%"
+      },
+      "artifact_saved": true
+    }
+  },
+  "dummy_baseline": {
+    "roc_auc": 0.5,
+    "pr_auc": 0.16809493782110257,
+    "brier": 0.13983902971189557,
+    "log_loss": 0.4528525955106709,
+    "ece": 3.445768768178814e-06,
+    "prevalence": 0.16809493782110257,
+    "n": 96737,
+    "positives": 16261
+  },
+  "thresholds": {
+    "logistic_regression": 0.2746441750131787,
+    "random_forest": 0.3218884120171674,
+    "hist_gradient_boosting": 0.3548387096774194
+  },
+  "fit_seconds": {
+    "logistic_regression": 7.5,
+    "random_forest": 21.7,
+    "hist_gradient_boosting": 14.9
+  },
+  "params": {
+    "logistic_regression": {
+      "C": 3.0
+    },
+    "random_forest": {
+      "n_estimators": 120,
+      "min_samples_leaf": 100,
+      "max_features": "sqrt",
+      "max_depth": 14
+    },
+    "hist_gradient_boosting": {
+      "max_iter": 500,
+      "l2_regularization": 1.0,
+      "learning_rate": 0.05,
+      "max_leaf_nodes": 63
+    }
+  },
+  "splits": [
+    {
+      "split": "train",
+      "rows": 290211,
+      "positives": 48782,
+      "prevalence": 0.1681
+    },
+    {
+      "split": "calibration",
+      "rows": 48368,
+      "positives": 8130,
+      "prevalence": 0.1681
+    },
+    {
+      "split": "selection",
+      "rows": 48369,
+      "positives": 8130,
+      "prevalence": 0.1681
+    },
+    {
+      "split": "test",
+      "rows": 96737,
+      "positives": 16261,
+      "prevalence": 0.1681
+    }
+  ]
+}

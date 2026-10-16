@@ -1,0 +1,43 @@
+{
+  "active_version": "hmda-tx2025-20261016-220643",
+  "versions": {
+    "hmda-tx2025-20261016-220643": {
+      "status": "demo_approved",
+      "created_at": "2026-10-16T22:06:43+00:00",
+      "selected_algorithm": "hist_gradient_boosting",
+      "dataset": "HMDA 2025 TX: approved or denied, complete, site-built 1-4 unit",
+      "headline_metrics": {
+        "roc_auc": 0.8566153125726234,
+        "pr_auc": 0.6849782549447404,
+        "brier": 0.08502062107341639,
+        "ece": 0.0027711961467906756,
+        "recall_at_threshold": 0.5290572535514421,
+        "precision_at_threshold": 0.7242192103712434,
+        "test_rows": 96737
+      },
+      "manifest_sha256": "c6b629dd892342939ec1376b6b4c035294be9386a866f6c2d235d13db6021450",
+      "artifact_sha256": {
+        "logistic_regression": "9fd6a68f4bc11e2054916e1c47ab9c289c663ff17a415a73257156d9d5adaada",
+        "random_forest": "4df9fee617cb208aabb2264846536145e979a4f538862f66eb0d5cca97dea453",
+        "hist_gradient_boosting": "0b2a3515fc907675c7a4320ea4d84f56c8e6fc4190704427d23a7ca62855b5df"
+      },
+      "gates_passed": true
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-10-16T22:06:43+00:00",
+      "action": "register",
+      "version": "hmda-tx2025-20261016-220643",
+      "status": "review_required"
+    },
+    {
+      "at": "2026-10-16T22:06:49+00:00",
+      "action": "promote",
+      "version": "hmda-tx2025-20261016-220643",
+      "previous": null,
+      "actor": "Samuel Alderete (repo owner), via Claude Code",
+      "reason": "Final model for v1.0: 10/10 gates passed; model card and fairness audit reviewed"
+    }
+  ]
+}
