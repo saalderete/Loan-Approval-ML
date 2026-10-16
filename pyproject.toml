@@ -7,7 +7,7 @@ name = "loan-approval-ml"
 version = "1.0.0"
 description = "Explainable mortgage-decision research lab trained on public HMDA data, with a fair-lending audit, FastAPI service and Streamlit dashboard."
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = ">=3.12"
 license = { text = "MIT" }
 authors = [{ name = "Samuel Alderete" }]
 dependencies = [
@@ -37,7 +37,7 @@ include = ["loan_approval*"]
 
 [tool.ruff]
 line-length = 110
-target-version = "py311"
+target-version = "py312"
 extend-exclude = [".venv", "data", "models", "var"]
 
 [tool.ruff.lint]

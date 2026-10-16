@@ -4,7 +4,7 @@
 with calibrated estimates, a fair-lending audit, a FastAPI service and a Streamlit dashboard.**
 
 [![CI](https://github.com/saalderete/Loan-Approval-ML/actions/workflows/ci.yml/badge.svg)](https://github.com/saalderete/Loan-Approval-ML/actions/workflows/ci.yml)
-![Python](https://img.shields.io/badge/python-3.11%20%7C%203.12-0F8B8D)
+![Python](https://img.shields.io/badge/python-3.12%20%7C%203.13-0F8B8D)
 ![License](https://img.shields.io/badge/license-MIT-2F4A6D)
 
 > **Research and education only.** This project models *historical* lender decisions from public
@@ -67,7 +67,7 @@ automatically from the saved evaluation files.
 ```bash
 git clone https://github.com/saalderete/Loan-Approval-ML.git
 cd Loan-Approval-ML
-python3 -m venv .venv && source .venv/bin/activate     # Python 3.11+
+python3 -m venv .venv && source .venv/bin/activate     # Python 3.12+
 pip install -r requirements.txt && pip install -e .
 
 streamlit run app/streamlit_app.py                     # dashboard at http://localhost:8501
@@ -157,7 +157,7 @@ E2E_BASE_URL=http://localhost:8501 pytest -m e2e    # optional browser test (Pla
 ```
 
 Tests train a small synthetic model in a temp directory, so CI never needs the HMDA download.
-GitHub Actions runs lint, tests on Python 3.11 and 3.12, `pip-audit`, and a Docker build with an API
+GitHub Actions runs lint, tests on Python 3.12 and 3.13, `pip-audit`, and a Docker build with an API
 smoke test.
 
 ## Optional: AI Model Analyst
