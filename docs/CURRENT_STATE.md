@@ -19,14 +19,12 @@ the development handoff required.
 | Dashboard | 10-page Streamlit app, light/dark themes, in-process or API-backed | `tests/ui/test_streamlit_pages.py` |
 | AI analyst | Read-only tools, citation and number grounding checks, scope/PII refusals, graceful failure; deterministic quick answers | `tests/unit/test_analyst.py` (scripted provider) |
 | Monitoring | Ops stats, input-drift PSI per feature, AI usage; aggregate-only storage | `src/loan_approval/monitoring.py` |
-| Quality | 95 tests passing locally; ruff clean; `pip-audit` clean; Docker image built and smoke-tested (API + dashboard) | `.github/workflows/ci.yml` |
+| Quality | 95 tests passing on Python 3.12 and 3.13; ruff clean; `pip-audit` clean; Docker image built and smoke-tested. All green in GitHub Actions (run 38974407815) | `.github/workflows/ci.yml` |
 
 ## Not verified / assumptions
 
 - The **LLM analyst** has been tested only with a scripted provider. It has not been run against a live
   Anthropic API key in this environment.
-- **GitHub Actions** has not yet run on GitHub at the time of writing. The workflow mirrors the commands
-  that passed locally.
 - **Hosting** (Streamlit Community Cloud or a container host) is not set up.
 - HMDA terms of use were summarised from the FFIEC site; re-check them before redistributing raw files.
 
