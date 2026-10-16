@@ -1,5 +1,45 @@
-.DS_Store
+# Python
 __pycache__/
-*.pyc
-.ipynb_checkpoints/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+build/
+dist/
+
+# Environments and secrets
+.venv/
+venv/
+env/
 .env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# OS / editor
+.DS_Store
+__MACOSX/
+.idea/
+.vscode/
+*.swp
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Data: raw and processed HMDA files are downloaded by `loan-approval fetch`, never committed
+data/raw/*
+data/processed/*
+data/synthetic/*
+!data/**/.gitkeep
+
+# Runtime state (SQLite monitoring/audit DB, job logs)
+var/
+
+# Model artifacts: only versions listed in models/registry.json are committed.
+# Scratch training output goes to models/_scratch/.
+models/_scratch/
+
+# Test / browser artifacts
+test-results/
+playwright-report/

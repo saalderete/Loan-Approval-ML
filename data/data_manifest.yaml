@@ -1,0 +1,22 @@
+files:
+  TX_2025:
+    filename: hmda_2025_TX_actions_1_2_3.csv
+    source: https://ffiec.cfpb.gov/v2/data-browser-api/view/csv
+    query:
+      states: TX
+      years: '2025'
+      actions_taken: 1,2,3
+    retrieved_at: '2026-10-16T21:29:16+00:00'
+    sha256: 3abc1ec4e60ad714a191f3b0b2da91008926a428999a30ddbf2a8a56dc8858da
+    bytes: 283684312
+    rows: 749111
+    columns: 99
+dataset:
+  title: HMDA Loan/Application Register (public, modified LAR) - Texas, 2025
+  publisher: Federal Financial Institutions Examination Council (FFIEC) / CFPB
+  landing_page: https://ffiec.cfpb.gov/data-browser/
+  api: https://ffiec.cfpb.gov/v2/data-browser-api/view/csv
+  documentation: https://ffiec.cfpb.gov/documentation/publications/loan-level-datasets/lar-data-fields
+license: Public data released by U.S. federal agencies (FFIEC/CFPB) under HMDA. The
+  modified LAR is published for public use; re-check the FFIEC terms before redistributing
+  raw files.

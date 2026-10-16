@@ -1,0 +1,105 @@
+# Fictional applicant profiles for the public demo. They are hand-written examples,
+# not records from the HMDA file, and contain no personal information.
+scenarios:
+  - id: steady-first-home
+    label: "First home, moderate debt"
+    description: "Conventional purchase of a principal residence with a 20% down payment."
+    inputs:
+      loan_amount: 285000
+      property_value: 355000
+      income: 112
+      debt_to_income_ratio: "30%-<36%"
+      combined_loan_to_value_ratio: 80.0
+      loan_term: 360
+      loan_type: "1"
+      loan_purpose: "1"
+      lien_status: "1"
+      occupancy_type: "1"
+      total_units: "1"
+      preapproval: "2"
+      conforming_loan_limit: "C"
+  - id: fha-low-down
+    label: "FHA purchase, low down payment"
+    description: "FHA-insured purchase with 3.5% down and a debt ratio in the mid-40s."
+    inputs:
+      loan_amount: 235000
+      property_value: 245000
+      income: 68
+      debt_to_income_ratio: "45"
+      combined_loan_to_value_ratio: 96.5
+      loan_term: 360
+      loan_type: "2"
+      loan_purpose: "1"
+      lien_status: "1"
+      occupancy_type: "1"
+      total_units: "1"
+      preapproval: "2"
+      conforming_loan_limit: "C"
+  - id: high-dti-cashout
+    label: "Cash-out refinance, high debt ratio"
+    description: "Cash-out refinance where monthly debts exceed 60% of income."
+    inputs:
+      loan_amount: 195000
+      property_value: 275000
+      income: 54
+      debt_to_income_ratio: ">60%"
+      combined_loan_to_value_ratio: 78.0
+      loan_term: 360
+      loan_type: "1"
+      loan_purpose: "32"
+      lien_status: "1"
+      occupancy_type: "1"
+      total_units: "1"
+      preapproval: "2"
+      conforming_loan_limit: "C"
+  - id: va-veteran-purchase
+    label: "VA purchase, no down payment"
+    description: "VA-guaranteed purchase at 100% loan-to-value with a moderate debt ratio."
+    inputs:
+      loan_amount: 325000
+      property_value: 325000
+      income: 96
+      debt_to_income_ratio: "41"
+      combined_loan_to_value_ratio: 100.0
+      loan_term: 360
+      loan_type: "3"
+      loan_purpose: "1"
+      lien_status: "1"
+      occupancy_type: "1"
+      total_units: "1"
+      preapproval: "2"
+      conforming_loan_limit: "C"
+  - id: second-lien-improvement
+    label: "Home-improvement second lien"
+    description: "Small subordinate-lien loan for renovations on an owned home."
+    inputs:
+      loan_amount: 45000
+      property_value: 315000
+      income: 88
+      debt_to_income_ratio: "43"
+      combined_loan_to_value_ratio: 72.0
+      loan_term: 180
+      loan_type: "1"
+      loan_purpose: "2"
+      lien_status: "2"
+      occupancy_type: "1"
+      total_units: "1"
+      preapproval: "2"
+      conforming_loan_limit: "C"
+  - id: investor-duplex
+    label: "Investor buying a duplex"
+    description: "Conventional purchase of a two-unit investment property with 25% down."
+    inputs:
+      loan_amount: 375000
+      property_value: 505000
+      income: 185
+      debt_to_income_ratio: "38"
+      combined_loan_to_value_ratio: 75.0
+      loan_term: 360
+      loan_type: "1"
+      loan_purpose: "1"
+      lien_status: "1"
+      occupancy_type: "3"
+      total_units: "2"
+      preapproval: "2"
+      conforming_loan_limit: "C"

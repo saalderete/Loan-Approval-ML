@@ -1,0 +1,32 @@
+services:
+  api:
+    build: .
+    image: loan-approval-ml:latest
+    ports: ["8000:8000"]
+    environment:
+      ADMIN_TOKEN: ${ADMIN_TOKEN:-}
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+      LLM_MODEL: ${LLM_MODEL:-claude-opus-5-5}
+      RATE_LIMIT_PER_MINUTE: ${RATE_LIMIT_PER_MINUTE:-60}
+    volumes:
+      - state:/app/var
+    restart: unless-stopped
+
+  dashboard:
+    image: loan-approval-ml:latest
+    depends_on:
+      api:
+        condition: service_healthy
+    command: ["streamlit", "run", "app/streamlit_app.py", "--server.port", "8501", "--server.address", "0.0.0.0"]
+    ports: ["8501:8501"]
+    environment:
+      API_URL: http://api:8000
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8501/_stcore/health', timeout=3)"]
+      interval: 30s
+      timeout: 5s
+      start_period: 30s
+    restart: unless-stopped
+
+volumes:
+  state:

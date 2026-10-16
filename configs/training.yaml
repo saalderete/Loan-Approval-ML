@@ -1,0 +1,27 @@
+# Training protocol. Decided before training; changing it creates a new model version.
+seed: 20251
+target: denied            # 1 = application denied (action_taken 3), 0 = approved (1 or 2)
+primary_metric: pr_auc    # chosen in advance; denials are the minority class
+split:
+  test_size: 0.20
+  validation_size: 0.20   # halved into calibration and selection splits
+tuning:
+  cv_folds: 3
+  max_rows: 120000        # stratified training subsample used for the hyper-parameter search
+calibration: isotonic     # fitted on the calibration split only
+bootstrap_resamples: 200
+importance_rows: 20000
+max_artifact_mb: 60
+candidates:
+  logistic_regression:
+    grid:
+      C: [0.03, 0.3, 3.0]
+  random_forest:
+    fixed: {n_estimators: 120, min_samples_leaf: 100, max_features: sqrt}
+    grid:
+      max_depth: [10, 14]
+  hist_gradient_boosting:
+    fixed: {max_iter: 500, l2_regularization: 1.0}
+    grid:
+      learning_rate: [0.05, 0.1]
+      max_leaf_nodes: [31, 63]

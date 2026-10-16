@@ -1,0 +1,54 @@
+[runner]
+magicEnabled = false
+
+[server]
+headless = true
+runOnSave = false
+maxUploadSize = 1
+enableXsrfProtection = true
+
+[browser]
+gatherUsageStats = false
+
+[client]
+toolbarMode = "minimal"
+showErrorDetails = "none"
+
+[theme]
+font = "Inter:https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+codeFont = "JetBrains Mono:https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap"
+headingFontWeights = [700, 650, 600, 600, 600, 600]
+baseRadius = "10px"
+showSidebarBorder = true
+
+[theme.light]
+primaryColor = "#0F8B8D"
+backgroundColor = "#F5F7FA"
+secondaryBackgroundColor = "#EAEFF5"
+textColor = "#14263A"
+borderColor = "#DCE3EC"
+linkColor = "#0B6E70"
+chartCategoricalColors = ["#0F8B8D", "#2F4A6D", "#8A9BB0", "#B7791F", "#5E81AC", "#A3BE8C"]
+
+[theme.light.sidebar]
+backgroundColor = "#0B1F33"
+secondaryBackgroundColor = "#13304B"
+textColor = "#DCE6F2"
+primaryColor = "#3CC4C2"
+borderColor = "#1D3A57"
+
+[theme.dark]
+primaryColor = "#2BB3B1"
+backgroundColor = "#0B1220"
+secondaryBackgroundColor = "#152036"
+textColor = "#DCE4EE"
+borderColor = "#24324A"
+linkColor = "#5FD0CE"
+chartCategoricalColors = ["#2BB3B1", "#8FB3E8", "#93A3B8", "#E0A84F", "#5E81AC", "#A3BE8C"]
+
+[theme.dark.sidebar]
+backgroundColor = "#070D18"
+secondaryBackgroundColor = "#101A2C"
+textColor = "#C9D5E3"
+primaryColor = "#3CC4C2"
+borderColor = "#1A2740"
